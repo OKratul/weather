@@ -13,7 +13,39 @@ submitBtn.addEventListener('click', function(){
         temp.innerHTML = data.main.temp - 273.15.toFixed(2);
         let des = document.getElementById('des');
         des.innerHTML = data.weather[0].description;
-        
+
+        if(des.innerHTML== 'haze'){
+           let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('cityscape-high-rise-buildings-poor-weather-morning-haze-pollution-covers-city-192077857.jpg')";
+           
+           
+        }
+       else if (des.innerHTML== 'overcast clouds'){
+        let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('photo-1611928482473-7b27d24eab80.jpg')";
+       }
+       else if (des.innerHTML== 'moderate rain'){
+        let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('Rain-rain-2106040717.jpg')";
+       }
+       else if (des.innerHTML== 'light rain'){
+        let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('Rains-1.webp')";
+       }
+       else if (des.innerHTML== 'broken clouds'){
+        let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('cirrocumulus-234427_640.jpg')";
+       }
+       else if (des.innerHTML== 'clear sky'){
+        let container = document.querySelector('.container');
+
+           container.style.backgroundImage="url('blue-sky-with-clouds-weather-background_261642-70.webp')";
+       }
     })
 }
 )
