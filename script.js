@@ -10,7 +10,7 @@ submitBtn.addEventListener('click', function(){
         cityName.innerHTML = data.name;
 
         let temp = document.getElementById('temp');
-        temp.innerHTML = data.main.temp - 273.15.toFixed(2);
+        temp.innerHTML = data.main.temp - 273.15;
         let des = document.getElementById('des');
         des.innerHTML = data.weather[0].description;
 
